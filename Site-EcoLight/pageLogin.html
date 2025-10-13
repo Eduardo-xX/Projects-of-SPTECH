@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login - EcoLight</title>
+    <link rel="stylesheet" href="styles/styleLogin.css">
+</head>
+<body>
+    <header>
+        <div class="container_logo">
+            <a href="./index.html"><img src="./Assets/Logo-Preta-semFundo-Pequena.png" alt=""></a>
+        </div>
+        <div class="container_links">
+            <nav class="nav_1">
+                <span>
+                    <a href="#">Home</a>
+                </span>
+                <span>
+                    <a href="">Sobre nós</a>
+                </span>
+                <span>
+                    <a href="">Serviços</a>
+                </span>
+                <span>
+                    <a href="">Contato</a>
+                </span>
+                <span>
+                    <a href="./simuladorFinanceiro.html">Simulador financeiro</a>
+                </span>
+            </nav>
+            <nav class="nav_2">
+                <span onclick="buttonMenu()" id="buttonMenu_dropdown">Menu <img src="./Assets/arrow_bottom.png" alt=""></span>
+                <div id="menu_dropdown" style="display: none;">
+                    <span>
+                        <a href="#">Home</a>
+                    </span>
+                    <span>
+                        <a href="">Sobre nós</a>
+                    </span>
+                    <span>
+                        <a href="">Serviços</a>
+                    </span>
+                    <span>
+                        <a href="">Contato</a>
+                    </span>
+                    <span>
+                        <a href="./simuladorFinanceiro.html">Simulador financeiro</a>
+                    </span>
+                </div>
+            </nav>
+            <div class="buttons">
+                <button class="cadastro"><a href="./pageCadastro.html">Cadastre-se</a></button>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="fora">
+
+        </div>
+        <div class="dentro">
+            <section class="visual">
+                <p>a</p>
+                <h1>Bem-vindo de volta à EcoLight</h1>
+                <img src="./Assets/Logo-Preta-semFundo.png" alt="">
+                <span>Página institucional</span>
+                <p>a</p>
+            </section>
+            <section class="interacao">
+                <div class="conteudo">
+                    <h2>Preencha seus dados e tenha acesso a sua conta!</h2>
+                    
+                    <label for="input_emailOuCnpj">E-mail ou CNPJ da empresa</label>
+                    <input type="text" name="" id="input_emailOuCnpj" oninput="valEmail()">
+
+                    <label for="input_password">Senha</label>
+                    <input type="password" name="" id="input_password" oninput="valSenha()">
+                    <div id="div_mensagemSenha"></div>
+                    <span>Esqueceu a senha? <a href="#">Clique aqui!</a></span>
+
+                    <button>Entrar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scriptLogin.js"></script>
+    <script src="./menuDropdown.js"></script>
+</body>
+</html>

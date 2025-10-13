@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container_logo">
+            <a href="./index.html"><img src="./Assets/Logo-Preta-semFundo-Pequena.png" alt=""></a>
+        </div>
+        <div class="container_links">
+            <nav class="nav_1">
+                <span>
+                    <a href="#">Home</a>
+                </span>
+                <span>
+                    <a href="">Sobre nós</a>
+                </span>
+                <span>
+                    <a href="">Serviços</a>
+                </span>
+                <span>
+                    <a href="">Contato</a>
+                </span>
+                <span>
+                    <a href="./simuladorFinanceiro.html">Simulador financeiro</a>
+                </span>
+            </nav>
+            <nav class="nav_2">
+                <span onclick="buttonMenu()" id="buttonMenu_dropdown">Menu <img src="./Assets/arrow_bottom.png" alt=""></span>
+                <div id="menu_dropdown" style="display: none;">
+                    <span>
+                        <a href="#">Home</a>
+                    </span>
+                    <span>
+                        <a href="">Sobre nós</a>
+                    </span>
+                    <span>
+                        <a href="">Serviços</a>
+                    </span>
+                    <span>
+                        <a href="">Contato</a>
+                    </span>
+                    <span>
+                        <a href="./simuladorFinanceiro.html">Simulador financeiro</a>
+                    </span>
+                </div>
+            </nav>
+            <div class="buttons">
+                <button class="cadastro"><a href="./pageCadastro.html">Cadastre-se</a></button>
+                <button class="logar"><a href="./pageLogin.html">Já sou cliente</a></button>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="boxSides">
+            <div class="sides side1">
+                <span class="side1One">Abrilhante a sua empresa com a</span>
+                <div class="boxSide1Two">
+                    <span class="side1Two">EcoLight!</span>
+                </div>
+                <span class="side1Three">Te ajudamos a controlar o <span class="side1Four">gasto de energia</span> na sua empresa!</span>
+            </div>
+            <div class="sides side2">
+                <span class="side2One">Reduza seus gastos com iluminação em até</span>
+                <div class="boxSide2Two">
+                    <span class="side2Two">25%</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./menuDropdown.js"></script>
+</body>
+</html>
