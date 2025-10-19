@@ -62,14 +62,14 @@ header .container_perfil {
     align-items: center;
 }
 
-header .container_perfil span {
+/* header .container_perfil span {
     width: 68px;
     height: 68px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2px;
-}
+} */
 
 header .container_perfil img {
     width: 68px;
@@ -79,6 +79,36 @@ header .container_perfil img {
 
 header .container_perfil img:hover {
     transform: scale(1.1);
+}
+
+header .container_perfil #dropdownPerfil {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    z-index: 1;
+}
+
+header .container_perfil #dropdownPerfil span {
+    width: 100%;
+    display: flex;
+    background-color: #16578d;
+}
+
+header .container_perfil #dropdownPerfil span a {
+    width: 100%;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s;
+}
+
+header .container_perfil #dropdownPerfil span a:hover {
+    background-color: #60b1d1b2;
+}
+
+header .container_perfil #dropdownPerfil span .exit:hover {
+    background-color: #7c0707e1;
 }
 
 /* Fim Container Perfil */
@@ -128,6 +158,7 @@ main .filtros .container_filtros {
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0px #3b3b3b3a;
 }
 
 main .filtros .container_filtros .tittleFiltro {
@@ -218,6 +249,7 @@ main .tabelas .tabela {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 4px 0px #3b3b3b3a;
 }
 
 main .tabelas .tabela .container_tabela {
@@ -280,6 +312,78 @@ main .tabelas .tabela .conteudoTabela section .miniConteudo {
 main .container_dashboard .kpis {
     width: 29%; /* 520px */
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .kpis .kpi {
+    width: 45%;
+    height: 30%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #3b3b3b3a;
+}
+
+main .kpis .kpi .container_kpi {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .kpis .kpiIdeal {
+    background-color: #D9FFE6;
+}
+
+main .kpis .kpiElevada {
+    background-color: #FAE9B2;
+}
+
+main .kpis .kpiInferior {
+    background-color: #FABDB2;
+}
+
+main .kpis .kpi .container_kpi .tittleKpi {
+    color: #FFAC5E;
+    font-size: 1.3rem;
+}
+
+main .kpis .kpi .container_kpi .tittleKpiIdeal {
+    color: #00862D;
+}
+
+main .kpis .kpi .container_kpi .tittleKpiElevada {
+    color: #FFAC5E;
+}
+
+main .kpis .kpi .container_kpi .tittleKpiInferior {
+    color: #C41D00;
+}
+
+main .kpis .kpi .container_kpi .conteudoKpi {
+    margin-top: 1.5rem;
+    color: #FFAC5E;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main .kpis .kpi .container_kpi .conteudoKpiIdeal {
+    color: #00862D;
+}
+
+main .kpis .kpi .container_kpi .conteudoKpiElevada {
+    color: #FFAC5E;
+}
+
+main .kpis .kpi .container_kpi .conteudoKpiInferior {
+    color: #C41D00;
 }
 
 /* Fim Kpis */

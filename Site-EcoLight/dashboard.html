@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,23 @@
             <a href="./index.html"><img src="./Assets/logo_ecolight_transparente_branca.png" alt=""></a>
         </div>
         <div class="container_perfil">
-            <span><img src="./Assets/account.png" alt=""></span>
+            <img onclick="buttonPerfilMenu()" src="./Assets/account.png" alt="">
+            <!-- <span>
+            </span> -->
+            <div id="dropdownPerfil" style="display: none;">
+                <span>
+                    <a href="#">Perfil</a>
+                </span>
+                <span>
+                    <a href="#">Cadastrar</a>
+                </span>
+                <span>
+                    <a href="#">Trocar Senha</a>
+                </span>
+                <span>
+                    <a href="./index.html" class="exit">Sair</a>
+                </span>
+            </div>
         </div>
         
     </header>
@@ -111,44 +127,46 @@
             </div>
             <div class="kpis">
                 <div class="kpi">
-                    <div class="containerKpi">
+                    <div class="container_kpi">
                         <span class="tittleKpi">Padrão:</span>
                         <span class="conteudoKpi">49%</span>
                     </div>
                 </div>
                 <div class="kpi">
-                    <div class="containerKpi">
+                    <div class="container_kpi">
                         <span class="tittleKpi">Quantidade de ambientes:</span>
                         <span class="conteudoKpi">6</span>
                     </div>
                 </div>
                 <div class="kpi">
-                    <div class="containerKpi">
+                    <div class="container_kpi">
                         <span class="tittleKpi">Quantidade total de alertas:</span>
                         <span class="conteudoKpi">5</span>
                     </div>
                 </div>
-                <div class="kpi">
-                    <div class="containerKpi">
-                        <span class="tittleKpi">Incidência de luz ideal:</span>
-                        <span class="conteudoKpi">1</span>
+                <div class="kpi kpiIdeal">
+                    <div class="container_kpi">
+                        <span class="tittleKpi tittleKpiIdeal">Incidência de luz ideal:</span>
+                        <span class="conteudoKpi conteudoKpiIdeal">1</span>
                     </div>
                 </div>
-                <div class="kpi">
-                    <div class="containerKpi">
-                        <span class="tittleKpi">Incidência de luz elevada</span>
-                        <span class="conteudoKpi">3</span>
+                <div class="kpi kpiElevada">
+                    <div class="container_kpi">
+                        <span class="tittleKpi tittleKpiElevada">Incidência de luz elevada</span>
+                        <span class="conteudoKpi conteudoKpiElevada">3</span>
                     </div>
                 </div>
-                <div class="kpi">
-                    <div class="containerKpi">
-                        <span class="tittleKpi">Incidência de luz inferior</span>
-                        <span class="conteudoKpi">2</span>
+                <div class="kpi kpiInferior">
+                    <div class="container_kpi">
+                        <span class="tittleKpi tittleKpiInferior">Incidência de luz inferior</span>
+                        <span class="conteudoKpi conteudoKpiInferior">2</span>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+
+    <script src="./menuDropdown.js"></script>
 </body>
 </html>

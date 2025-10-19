@@ -98,12 +98,16 @@ header .nav_2 {
 }
 
 @media screen and (max-width: 800px) {
+    header {
+        width: 100vw;
+    }
+    
     header .container_logo {
         display: none;
     }
 
     header .container_links {
-        width: 100%;
+        width: 95%;
         margin-left: 1rem;
         justify-content: space-between;
     }
@@ -496,6 +500,22 @@ main .boxSides .side2 .side2Two {
     margin: auto;
     width: 800px;
     display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .nossosServicos {
+        height: 1750px;
+    }
+
+    .nossosServicos .containersServico {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nossosServicos .containerInstalacao {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .nossosServicos .containersServico .imgServicos {
