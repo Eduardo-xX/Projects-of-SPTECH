@@ -317,6 +317,18 @@ main .container_login .interacao .conteudo input {
     margin: .5rem;
 }
 
+main .container_login .interacao .conteudo #div_mensagemEmail {
+    color: #ff0000;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+main .container_login .interacao .conteudo #div_mensagemSenha {
+    color: #ff0000;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
 main .container_login .interacao .conteudo span {
     align-self: flex-start;
     color: #16578d;
