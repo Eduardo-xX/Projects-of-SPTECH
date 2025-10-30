@@ -1,34 +1,27 @@
 function buttonSubmitForm () {
-    var messagem = document.getElementById('textarea_mensagem').value;
-    var nomeEmpresa = input_nomeEmpresa.value;
-    var email = input_emailEmpresa.value;
-    var nomeRepresentante = input_nomeRepresentante.value;
-    var tellContato = input_telefoneContato.value;
+    var mensagem = document.getElementById('textarea_mensagem').value;
+    var nomeEmpresa = document.getElementById('input_nomeEmpresa').value;
+    var email = document.getElementById('input_emailEmpresa').value;
+    var nomeRepresentante = document.getElementById('input_nomeRepresentante').value;
+    var tellContato = document.getElementById('input_telefoneContato').value;
     var cont = 0
 
-
-    if (nomeEmpresa == ""){
-        alert(`Insira o nome da empressa para poder continuar`)
-    }
-    if(email == ""){
-        alert(`Insira o email para poder continuar`)
-    }
-    if(nomeRepresentante == ""){
-        alert(`Insira o nome do representante para continuar`)
-    }
-    if(tellContato == ""){
-        alert(`Insira um telefone para contato para continuar`)
-    }
-
-    while (cont < messagem.length) {
+    while (cont < mensagem.length) {
         cont++
     }
-    if (cont <= 0 ) {
-        alert(`Erro! Algo precisa ser inserido para a mensagem ser enviada.`)
+
+    if (nomeEmpresa == "" || email == "" || nomeRepresentante == "" || tellContato == "" || mensagem == ""){
+        div_mensagemMensagem.innerHTML = `Preencha todos os campos para continuar`
     } else if (cont > 500){
-        alert(`Erro! A mensagem ultrapassou os 500 caracters`)
+        div_mensagemMensagem.innerHTML = `Erro! A mensagem ultrapassou os 500 caracters`
     } else {
+        div_mensagemMensagem.innerHTML = ``
         alert(`Mensagem enviada`)
+        input_nomeEmpresa.value = ''
+        input_emailEmpresa.value = ''
+        input_nomeRepresentante.value = ''
+        input_telefoneContato.value = ''
+        textarea_mensagem.value = ''
     }
-    }
+}
 
